@@ -1,0 +1,98 @@
+<% include ../partials/header.ejs %>
+
+<main class="container">
+     
+     <div class="row">
+         <div class="col-md-offset-4 col-md-4">
+             <h4>Please Provide your feed Back</h4>
+             <form method="POST" >
+                 <fieldset class="form-group">
+                     <label for="firstname">First Name</label>
+                     <input type="text" class="form-control" id="firstname"
+                     name="firstname" value="<%= contact.firstname %>"
+                     >
+                 </fieldset>
+                 <fieldset class="form-group">
+                     <label for="lastname">Last Name</label>
+                     <input type="text" class="form-control"
+                     name="lastname" value="<%= contact.lastname %>" 
+                     id="lastname" required >
+                 </fieldset>
+                 <fieldset class="form-group">
+                     <label for="username">User Name</label>
+                     <input type="text" class="form-control"
+                     name="username" value="<%= contact.username %>" 
+                     id="username" required >
+                 </fieldset>
+                
+                 <fieldset class="form-group">
+                     <label for="email">Email</label>
+                     <input type="email" class="form-control"
+                     name="email" value="<%= contact.email %>"
+                     id="email" required >
+                 </fieldset>
+                 <fieldset class="form-group">
+                     <label for="displayName">Display Name:</label>
+                     <input type="text" class="form-control"
+                     name="displayName" value="<%= contact.displayName %>"
+                     id="displayName" >
+                 </fieldset>
+                 <fieldset class="form-group">
+                     <label for="feedback">Feed Back:</label>
+                     <textarea type="text" class="form-control"
+                     name="feedback" value="Please provide feedback"
+                     id="feedback" ></textarea>
+                 </fieldset>
+
+                 <fieldset class="form-group text-right">
+                     <input type="submit" class="btn btn-success" value="Submit">
+                     <a href="/">
+                        <input type="button" class="btn btn-warning" value="Cancel">
+                     </a>
+                 </fieldset>
+             </form>
+         </div>
+     </div>
+ </main>
+
+
+
+<% include ../partials/footer.ejs %>
+ 
+  <!-- Content to add Page 
+      <div class="container">
+          <div class="row">
+              <div class="col-md-offset-3 col-md-6">
+                    <h1><%= title%></h1>
+                    <form action="" class="form" method="POST">
+                        <div class="form-group">
+                                <label for="FirstNameTextField">First Name</label>
+                                <input type="text" class="form-control" id="FirstNameTextField" placeholder="Enter First Name"
+                                name="firstName"
+                                value="<%= contact.firstName %>"
+                                required>
+                        </div>
+                        <div class="form-group">
+                                <label for="LastNameTextField">Last Name</label>
+                                <input type="text" class="form-control" id="LastNameTextField" placeholder="Enter Last Name"
+                                name="lastName"
+                                value="<%= contact.lastName %>"
+                                required>
+                        </div>
+                        <div class="form-group">
+                                <label for="AgeTextField">First Name</label>
+                                <input type="text" class="form-control" id="AgeTextField" placeholder="Enter Age Name"
+                                name="age"
+                                value="<%= contact.age %>"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-edit"></i>Submit</button>
+                            <a class="btn btn-warning" href="/contact-list" role="button">
+                            <i class="fas fa-undo"></i> Cancel</a>
+                    </form>
+
+              </div>
+          </div>
+      </div>
+       -->
